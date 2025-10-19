@@ -1,0 +1,21 @@
+zombie = game:GetService("RunService").Stepped:Connect(function ()
+    local char = game.Players.LocalPlayer.Character
+    if not char or not char:FindFirstChild("Animate") then return end
+
+    -- 💤 Idle (OldSchool)
+    char.Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=10921230744"
+    char.Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=10921232093"
+
+    -- 🏃 Walk & Run (OldSchool)
+    char.Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=10921244891"
+    char.Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=10921240218"
+
+    -- 🦘 Jump & Fall (OldSchool)
+    char.Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=10921242013"
+    char.Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=10921241244"
+
+    -- 🧗 Climb & Swim (OldSchool)
+    char.Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=10921229866"
+    char.Animate.swim.SwimIdleAnim.AnimationId = "http://www.roblox.com/asset/?id=10921244018"
+    char.Animate.swim.SwimAnim.AnimationId = "http://www.roblox.com/asset/?id=10921243048"
+end)
